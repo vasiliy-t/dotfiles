@@ -1,9 +1,15 @@
+* dotfiles
+** bash
+*** Basic configuration
+#+BEGIN_SRC conf :tangle ~/.bash_profile
 export CLICOLOR=1
-
+source ~/.bash_aliases
+#+END_SRC
+*** Aliases
+#+BEGIN_SRC conf :tangle ~/.bash_aliases
 alias npm='docker run --rm -it -v `pwd`:`pwd` -w `pwd` leanlabs/npm-builder npm'
-
 alias bower='docker run --rm -it -v `pwd`:`pwd` -w `pwd` leanlabs/npm-builder bower'
-
-alias php='docker run --rm -it -v `pwd`:`pwd` -w `pwd` php:7'
-
+alias php='docker run --rm -it -v `pwd`:`pwd` -w `pwd` php:7-alpine'
 alias composer='docker run --rm -it -v `pwd`:`pwd` -w `pwd` imega/composer:2.0.0'
+#+END_SRC
+
