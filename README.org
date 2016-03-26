@@ -1,4 +1,5 @@
 * dotfiles
+There is my dotfiles, managed by emacs org-mode-babel.
 ** bash
 *** Basic configuration
 #+BEGIN_SRC conf :tangle ~/.bash_profile
